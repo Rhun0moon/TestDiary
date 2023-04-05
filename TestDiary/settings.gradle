@@ -4,6 +4,7 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
         jcenter() // Warning: this repository is going to shut down soon
+        maven { url 'https://jitpack.io' } // 라이브러리 주소
     }
 }
 rootProject.name = "TestDiary"
