@@ -21,7 +21,7 @@
         android:visibility="visible">
 
         <ImageView
-            android:id="@+id/moodImageView"
+            android:id="@+id/moodImageView1"
             android:layout_width="54dp"
             android:layout_height="54dp"
             android:layout_gravity="center_vertical"
@@ -36,7 +36,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/contentsTextView"
+                android:id="@+id/contentsTextView1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="내용"
@@ -48,7 +48,7 @@
                 android:layout_marginTop="10dp">
 
                 <ImageView
-                    android:id="@+id/weatherImageView"
+                    android:id="@+id/weatherImageView1"
                     android:layout_width="32dp"
                     android:layout_height="32dp"
                     android:layout_alignParentLeft="true"
@@ -58,10 +58,10 @@
                     android:layout_width="32dp"
                     android:layout_height="32dp"
                     android:layout_marginLeft="10dp"
-                    android:layout_toRightOf="@+id/weatherImageView"
+                    android:layout_toRightOf="@+id/weatherImageView1"
                     android:src="@drawable/picture_128"/>
                 <TextView
-                    android:id="@+id/locationTextView"
+                    android:id="@+id/locationTextView1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
@@ -69,7 +69,7 @@
                     android:text="강남구 삼성동"
                     android:textSize="16sp"/>
                 <TextView
-                    android:id="@+id/dateTextView"
+                    android:id="@+id/dateTextView1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
