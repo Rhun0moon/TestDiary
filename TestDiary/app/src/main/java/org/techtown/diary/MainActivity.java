@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 import com.google.android.material.navigation.NavigationView;
+import com.google.android.material.tabs.TabLayout;
 
 public class MainActivity extends AppCompatActivity implements OnTabItemSelectedListener{
     Fragment1 fragment1;
@@ -25,7 +26,7 @@ public class MainActivity extends AppCompatActivity implements OnTabItemSelected
         fragment2 = new Fragment2();
         fragment3 = new Fragment3();
 
-        getSupportFragmentManager().beginTransaction().replace(R.id.constraint, fragment1).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.container, fragment1).commit();
 
         navigationBarView = findViewById(R.id.bottom_navigation);
         navigationBarView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener(){
@@ -50,12 +51,12 @@ public class MainActivity extends AppCompatActivity implements OnTabItemSelected
         });
     }
 
-    public void OnTabSelected(int position){
+    public void onTabSelected(int position){
         if(position == 0){
             navigationBarView.setSelectedItemId(R.id.tab1);
         }else if(position == 1){
             navigationBarView.setSelectedItemId(R.id.tab2);
-        }else if(position == 3){
+        }else if(position == 2){
             navigationBarView.setSelectedItemId(R.id.tab3);
         }
     }

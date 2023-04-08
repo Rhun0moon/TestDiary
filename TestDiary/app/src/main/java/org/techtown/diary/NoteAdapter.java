@@ -80,7 +80,7 @@ public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.ViewHolder> im
             super(itemView);
 
             layout1 = itemView.findViewById(R.id.layout1);
-            layout1 = itemView.findViewById(R.id.layout2);
+            layout2 = itemView.findViewById(R.id.layout2);
 
             moodImageView1 = itemView.findViewById(R.id.moodImageView1);
             moodImageView2 = itemView.findViewById(R.id.moodImageView2);
@@ -91,8 +91,8 @@ public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.ViewHolder> im
             weatherImageView1 = itemView.findViewById(R.id.weatherImageView1);
             weatherImageView2 = itemView.findViewById(R.id.weatherImageView2);
 
-            contentsTextView1 = itemView.findViewById(R.id.weatherImageView1);
-            contentsTextView2 = itemView.findViewById(R.id.weatherImageView2);
+            contentsTextView1 = itemView.findViewById(R.id.contentsTextView1);
+            contentsTextView2 = itemView.findViewById(R.id.contentsTextView2);
 
             locationTextView1 = itemView.findViewById(R.id.locationTextView1);
             locationTextView2 = itemView.findViewById(R.id.locationTextView2);
@@ -209,11 +209,11 @@ public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.ViewHolder> im
             }
         }
 
-        public void setLayoutType(int layoutTpye){
-            if(layoutTpye == 0){
+        public void setLayoutType(int layoutType){
+            if(layoutType == 0){
                 layout1.setVisibility(View.VISIBLE);
                 layout2.setVisibility(View.GONE);
-            }else if(layoutTpye == 1){
+            }else if(layoutType == 1){
                 layout1.setVisibility(View.GONE);
                 layout2.setVisibility(View.VISIBLE);
             }
